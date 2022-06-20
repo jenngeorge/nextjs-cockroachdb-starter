@@ -24,7 +24,7 @@ This is a [Next.js](https://nextjs.org/) v12 project bootstrapped with `create-n
   ```
   cockroach sql --url [Connection string] --file ./prisma/init_database.sql
   ```
-- Save the connection string to the `DATABASE_URL` environment variable
+- Save the connection string to the `COCKROACH_URL` environment variable
 
 ### Installation options
 
@@ -34,7 +34,7 @@ This is a [Next.js](https://nextjs.org/) v12 project bootstrapped with `create-n
 
 Clicking this button will create a new repo for you that looks like this one, and sets that repo up immediately for deployment on Netlify. You will be prompted for a repo name and to provide the values for the following environment variables:
 
-- Postgres Connection String (`DATABASE_URL`), **required** You can find this in the Connect model in the Cockroach Labs Cloud Console
+- Postgres Connection String (`COCKROACH_URL`), **required** You can find this in the Connect model in the Cockroach Labs Cloud Console
 - NextAuth URL (`NEXTAUTH_URL`), **required for production** The canonical URL of your site.
 - NextAuth Secret (`NEXTAUTH_SECRET`), **required for production** A random string is used to hash tokens, sign/encrypt cookies and generate cryptographic keys. Can be generated using the `openssl` command:
 
